@@ -15,9 +15,12 @@ export function Features() {
   const { features } = content;
 
   return (
-    <section id="features" className="scroll-mt-28 bg-white px-4 py-20 sm:py-28 sm:scroll-mt-40">
+    <section className="bg-white px-4 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
-        <header className="mb-12 max-w-2xl sm:mb-16">
+        <header
+          id="features"
+          className="mb-12 max-w-2xl scroll-mt-6 sm:mb-16 sm:scroll-mt-10"
+        >
           <p className="text-sm font-semibold uppercase tracking-widest text-umn-maroon">
             {features.eyebrow}
           </p>
