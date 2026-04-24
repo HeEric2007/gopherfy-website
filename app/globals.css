@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --border: oklch(0.922 0 0);
+}
+
+@theme inline {
+  --color-umn-maroon: #7a0019;
+  --color-umn-gold: #ffcc33;
+  --color-blurple: #5865f2;
+  --color-blurple-hover: #4752c4;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.hero-backdrop {
+  background:
+    radial-gradient(ellipse 60% 55% at 12% 18%, rgba(122, 0, 25, 0.42) 0%, transparent 60%),
+    radial-gradient(ellipse 55% 50% at 88% 12%, rgba(88, 101, 242, 0.45) 0%, transparent 62%),
+    radial-gradient(ellipse 70% 55% at 50% 95%, rgba(255, 204, 51, 0.55) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 35% at 78% 78%, rgba(122, 0, 25, 0.22) 0%, transparent 60%),
+    linear-gradient(180deg, #fff6ea 0%, #fdecec 55%, #eef0ff 100%);
+}
+
+.headline-tight {
+  letter-spacing: -0.04em;
+}
