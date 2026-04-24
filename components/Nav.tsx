@@ -18,23 +18,23 @@ export function Nav() {
         <nav className="flex items-center gap-2 sm:gap-5">
           <ul className="hidden items-center gap-5 text-sm font-medium text-neutral-700 sm:flex">
             {nav.links.map((link) => {
-              const isInternal = link.href.startsWith("/");
+              const isAnchor = link.href.includes("#");
               return (
                 <li key={link.label}>
-                  {isInternal ? (
-                    <Link
-                      href={link.href}
-                      className="transition hover:text-neutral-950"
-                    >
-                      {link.label}
-                    </Link>
-                  ) : (
+                  {isAnchor ? (
                     <a
                       href={link.href}
                       className="transition hover:text-neutral-950"
                     >
                       {link.label}
                     </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="transition hover:text-neutral-950"
+                    >
+                      {link.label}
+                    </Link>
                   )}
                 </li>
               );

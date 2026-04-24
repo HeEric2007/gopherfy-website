@@ -3,7 +3,7 @@ import { content } from "@/lib/content";
 export function HowItWorks() {
   const { howItWorks } = content;
   return (
-    <section id="how-it-works" className="bg-white px-4 py-20 sm:py-28">
+    <section id="how-it-works" className="scroll-mt-16 bg-white px-4 py-20 sm:py-28 sm:scroll-mt-24">
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 text-center sm:mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-umn-maroon">
